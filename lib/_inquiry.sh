@@ -51,7 +51,7 @@ get_backend_url() {
 get_frontend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do FRONTEND para a ${instancia_add}; Ex: 3000 A 3999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite a porta do FRONTEND para a ${instancia_add}; Ex: 3000 (3000, 3001...) ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_port
 }
@@ -60,7 +60,7 @@ get_frontend_port() {
 get_backend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do BACKEND para esta instancia; Ex: 4000 A 4999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite a porta do BACKEND para esta instancia; Ex: 4000 (4000, 4001...) ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_port
 }
@@ -68,7 +68,7 @@ get_backend_port() {
 get_phpmyadmin_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do PHPMYADMIN  para a ${instancia_add}; Ex: 8080 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite a porta do PHPMYADMIN  para a ${instancia_add}; Ex: 8000 (8000, 8081...) ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " phpmyadmin_port
 }
@@ -76,7 +76,7 @@ get_phpmyadmin_port() {
 get_mysql_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta MYSQL para ${instancia_add}; Ex: 3306 (3306, 3307...) ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite a porta MYSQL para ${instancia_add}; Ex: 9000 (9000, 9001...) ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " mysql_port
 }
